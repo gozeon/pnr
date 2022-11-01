@@ -1,0 +1,3 @@
+# pnr
+
+private npm registry
