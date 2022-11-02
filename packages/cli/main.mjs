@@ -13,7 +13,6 @@ if(_id == undefined) {
 const formData = new FormData();
 formData.append('files', tarball, { filename: `${_id}.tgz` });
 
-const res = await axios.post("http://localhost:3000/upload", formData, {
+await axios.post("http://localhost:3000/upload", formData, {
     headers: formData.getHeaders()
 })
-console.log(res.data)

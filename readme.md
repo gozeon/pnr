@@ -15,6 +15,10 @@ use `packages/cli`, you can upload public registry or `npm link --local`
 
 ```sh
 pnr
+
+or local
+
+npx pnr
 ```
 
 > `pnr` will also run the `prepack` and `postpack` lifecycles

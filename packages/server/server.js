@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const Router = require('@koa/router');
 const server = require('koa-static')
+const logger = require('koa-logger')
 const fs = require('fs-extra');
 const path = require('path');
 const { koaBody } = require('koa-body');
@@ -27,13 +28,11 @@ app
         try {
             await next()
         } catch (err) {
-            errNo = err.statusCode || err.status || 500
-            errMsg = err.message || ""
-
-            ctx.status = 200
-            ctx.body = { errNo, errMsg }
+            ctx.status = err.statusCode || err.status || 500
+            ctx.body = err.message
         }
     })
+    .use(logger())
     .use(server("."))
     .use(koaBody({
         multipart: true,
