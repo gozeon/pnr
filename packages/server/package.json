@@ -16,6 +16,6 @@
     "koa-compose": "^4.1.0",
     "koa-logger": "^3.2.1",
     "koa-static": "^5.0.0",
-    "ss": "https://github.com/gozeon/ss.git#v2.0.1"
+    "ss": "https://github.com/gozeon/ss.git#v2.1.0"
   }
 }

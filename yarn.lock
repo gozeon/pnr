@@ -2034,9 +2034,9 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.12.tgz#69077835abe2710b65f03969898b6637b505a779"
   integrity sha512-rr+VVSXtRhO4OHbXUiAF7xW3Bo9DuuF6C5jH+q/x15j2jniycgKbxU09Hr0WqlSLUs4i4ltHGXqTe7VHclYWyA==
 
-"ss@https://github.com/gozeon/ss.git#v2.0.1":
-  version "2.0.1"
-  resolved "https://github.com/gozeon/ss.git#caa7cdfd0c0ceafc5bb6cce3dd5479ee49f9c769"
+"ss@https://github.com/gozeon/ss.git#v2.1.0":
+  version "2.1.0"
+  resolved "https://github.com/gozeon/ss.git#db0774bd76acbef77279e78f8fb927f6c9f33c3d"
   dependencies:
     chalk "5.1.2"
     chokidar "^3.4.3"
@@ -2046,6 +2046,7 @@ spdx-license-ids@^3.0.0:
     figlet "^1.5.0"
     ignore "^5.1.8"
     koa "^2.13.0"
+    koa-convert "^2.0.0"
     koa-router "^12.0.0"
     minimist "^1.2.5"
 
